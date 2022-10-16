@@ -8,5 +8,6 @@ export const pushToDataLayer = (event) => {
   });
 
   log(event);
-  if (!isStaging) window.dataLayer.push(event);
+
+  if (!isStaging()) window.dataLayer.push(event);
 };

@@ -5,5 +5,5 @@ import { isStaging } from './isStaging';
  */
 
 export const log = (message) => {
-  if (isStaging) console.log(message);
+  if (isStaging()) console.log(message);
 };

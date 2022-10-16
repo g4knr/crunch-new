@@ -3,4 +3,6 @@
  * @returns true if on the staging domain
  */
 
-export const isStaging = () => window.location.origin.includes('webflow.io');
+export const isStaging = () => {
+  return window.location.origin.includes('webflow.io');
+};

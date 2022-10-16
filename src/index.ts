@@ -7,6 +7,7 @@ window.Webflow ||= [];
 window.Webflow.push(() => {
   const CRUNCH = (() => {
     global.log('index.ts');
+    window.dataLayer = window.dataLayer || [];
 
     /**
      * DataLayer
