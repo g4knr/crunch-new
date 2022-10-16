@@ -4,7 +4,7 @@
  */
 
 export const getTotalFormSteps = (form) => {
-  let formSteps = form.querySelectorAll(crunchDefs.selectors.formStep);
+  let formSteps = form.querySelectorAll('.callback-form__steps');
   let totalSteps = formSteps.length > 0 ? formSteps.length : 1;
   return totalSteps;
 };

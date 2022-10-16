@@ -224,6 +224,7 @@ export const main = () => {
 
         loadingAnim(button, false);
       } else if (validationPassed && index === currentFormButtons.length - 1) {
+        console.log('has passed');
         // inputs have passed validation and this is the final form step
         // format the checkboxes for pardot if there are any
         const formCheckboxes = currentForm.querySelectorAll('.form__checkbox-wrapper');
