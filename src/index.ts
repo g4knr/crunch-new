@@ -87,8 +87,6 @@ window.Webflow.push(() => {
       });
     });
 
-    site.trustpilot();
-
     forms.main();
     forms.newsletter();
   })();
