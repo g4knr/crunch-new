@@ -17,12 +17,13 @@ export const trustpilot = () => {
 
   reviews.forEach((review) => {
     if (!review) return;
+    const more = review?.parentElement?.querySelector('.trustpilot__more');
+    if (!more) return;
+
     const height = review.offsetHeight;
     review.classList.add('line-clamp3');
     const newHeight = review.offsetHeight;
 
-    const more = review?.parentElement?.querySelector('.trustpilot__more');
-    if (!more) return;
     if (height === newHeight) {
       more.classList.add('is--hidden');
     } else {
