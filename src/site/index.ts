@@ -6,3 +6,4 @@ export { fab } from './fab';
 export { links } from './links';
 export { linkToTab } from './linkToTab';
 export { memberQuotes } from './memberQuotes';
+export { trustpilot } from './trustpilot';
