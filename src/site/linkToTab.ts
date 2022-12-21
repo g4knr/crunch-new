@@ -7,9 +7,9 @@ import { getParam } from '../utils/global';
  */
 
 export const linkToTab = () => {
-  let tabID = getParam('tab');
+  const tabID = getParam('tab');
   if (!tabID) return;
 
-  let tab = document.querySelector(`#${tabID}`);
+  const tab = document.querySelector(`#${tabID}`);
   simulateEvent(tab, 'click');
 };
